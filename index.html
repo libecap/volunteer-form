@@ -8,16 +8,17 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
 
 </head>
 <body>
-  <div class="wrapper">
-    <section class="contact pad-t-2 pad-b-2">
-      <div class="deck max-length gutter">
-        <h1 class="push-none pad-t"><b>Apply to be a tree planter</b></h1>
-        <p class="pad-t-1-4 pad-b giga">Trees are one of the world's most precious renewable resources-we need your help to renew the ecosystem</p>
+  <header class="deck">
+      <div class="max-length gutter">
+        <h1 class="push-none max-length pad-t"><b>Apply to be a tree planter</b></h1>
+        <p class="pad-t-1-4 max-length pad-b giga">Trees are one of the world's most precious renewable resources-we need your help to renew the ecosystem</p>
       </div>
+    </header>
+      <section class="contact pad-t-2 pad-b-2">
         <form class="push max-length" method="POST" action="https://formspree.io/libe0026@algonquinlive.com">
           <fieldset class="push">
           <legend class="giga gutter pad-t pad-b">Personal details</legend>
@@ -30,7 +31,7 @@
               <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
                 <label for="nickname">What should we call you</label>
                 <input type="text" id="nickname" required>
-                <p class="italic push-0">What all your friends call you, e.g. "Liz".</p>
+                <p class="italic push-0">What all your friends call you, e.g. “Liz”.</p>
               </div>
               <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
                 <label for="date">Date of birth</label>
@@ -99,7 +100,7 @@
             </div>
           </fieldset>
           <fieldset class="unit push">
-          <p class="giga gutter pad-t">What activites are you interested in helping with?</p>
+          <legend class="giga gutter pad-t">What activities are you interested in helping with?</legend>
             <div class="grid pad-t-1-2">
               <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
                 <input type="checkbox" id="digging">
@@ -188,7 +189,9 @@
               <input type="radio" id="valid-drivers-license" name="valid drivers license?">
               <label for="valid-drivers-license">No</label>
             </div>
-            <legend class="giga gutter push-1-2">Do you have a pick-up truck you'd be willing to use?</legend>
+          </fieldset>
+          <fieldset>
+          <legend class="giga gutter push-1-2">Do you have a pick-up truck you'd be willing to use?</legend>
             <div class="radio push gutter">
               <input type="radio" id="truck" name="have a pickup truck?">
               <label for="truck">Yes</label>
@@ -197,6 +200,8 @@
               <input type="radio" id="truck-no" name="have a pickup truck?">
               <label for="truck-no">No</label>
             </div>
+          </fieldset>
+          <fieldset>
           <legend class="giga gutter push-1-2">Do you have up-to-date first-aid certification?</legend>
             <div class="radio push gutter">
               <input type="radio" id="first-aid" name="current first aid certification?">
@@ -208,6 +213,7 @@
             </div>
           </fieldset>
           <fieldset class="max-length">
+          <legend>
             <div class="push gutter pad-t-1-2">
               <label class="push-1-2" for="details"><b>Please let us know any comments or questions you may have. <span class="italic">(optional)</span></b></label>
               <textarea id="details" name="message" required></textarea>
@@ -218,10 +224,11 @@
           </div>
           <input type="hidden" name="_subject" value="">
         </form>
-        <div class="deck max-length gutter island mega">
-          <p>© Tree Hugger International Organization<p>
+        <footer class="deck">
+        <div class="max-length gutter island mega">
+          <p>© Tree Hugger International Organization</p>
         </div>
+        </footer>
     </section>
-  </div>
 </body>
 </html>
