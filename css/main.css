@@ -1,0 +1,58 @@
+html {
+  font-family: "Noto Sans", serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.deck {
+  background-color: #70ad55;
+}
+
+.deck h1 {
+  color: #fff;
+}
+
+.deck p {
+  color: #fff;
+}
+span {
+  color: #70ad55;
+}
+
+input, select {
+  border-color: #6e8c62;
+}
+
+[type="checkbox"] + label::before {
+  border-color: #6e8c62;
+}
+
+fieldset {
+  border-bottom: solid;
+  border-color: #70ad55;
+  border-width: thin;
+  border-top: none;
+}
+
+.wrapper {
+  background-color: #fff;
+}
+
+.btn {
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+}
+
+@media only screen and (min-width: 60em) {
+
+  #name, #age, #details {
+    padding-top: 1rem;
+  }
+
+}
