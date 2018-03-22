@@ -15,13 +15,13 @@
   <div class="wrapper">
     <section class="contact pad-t-2 pad-b-2">
       <div class="deck max-length gutter">
-        <h1 class="push-none">Apply to be a tree planter</h1>
-        <p class="pad-t mega">Trees are one of the world's most precious renewable resources-we need your help to renew the ecosystem</p>
+        <h1 class="push-none pad-t"><b>Apply to be a tree planter</b></h1>
+        <p class="pad-t-1-4 pad-b giga">Trees are one of the world's most precious renewable resources-we need your help to renew the ecosystem</p>
       </div>
       <div class="max-length">
         <form class="push" method="POST" action="https://formspree.io/libe0026@algonquinlive.com">
           <fieldset class="push">
-            <legend class="giga gutter">Personal details</legend>
+            <legend class="giga gutter pad-t pad-b">Personal details</legend>
             <div class="grid pad-t-1-2">
               <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
                 <label for="name">Full Name</label>
@@ -57,14 +57,14 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="" required>
               </div>
-              <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
+              <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter pad-b-1-2">
                 <label for="phone-number">Phone number <span class="italic">(optional)</span></label>
                 <input type="tel" id="phone-number"></textarea>
               </div>
             </div>
           </fieldset>
           <fieldset class="push">
-            <legend class="giga gutter">Address</legend>
+            <legend class="giga gutter pad-t pad-b">Address</legend>
             <div class="grid pad-t-1-2">
             <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
               <label for="street-address">Street address</label>
@@ -73,10 +73,6 @@
             <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
               <label for="city">City</label>
               <input type="text" id="city" required>
-            </div>
-            <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
-              <label for="postal-code">Postal code</label>
-              <input id="postal-code" required></input>
             </div>
             <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
               <label for="province">Province</label>
@@ -97,10 +93,14 @@
                 <option>Yukon</option>
               </select>
             </div>
+            <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter pad-b">
+              <label for="postal-code">Postal code</label>
+              <input id="postal-code" required></input>
+            </div>
           </div>
           </fieldset>
           <fieldset class="unit push">
-            <legend class=" unit giga gutter">What activites are you interested in helping with?</legend>
+            <legend class=" unit giga gutter pad-t">What activites are you interested in helping with?</legend>
             <div class="grid pad-t-1-2">
             <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
               <input type="checkbox" id="digging">
@@ -134,7 +134,7 @@
               <input type="checkbox" id="managing-people">
               <label for="managing-people">Managing people</label>
             </div>
-            <legend class=" unit unit-xs-1 s-1 m-1 l-1 giga gutter push">Do you have any experience with the following?</legend>
+            <legend class=" unit unit-xs-1 s-1 m-1 l-1 giga gutter push pad-t-2">Do you have any experience with the following?</legend>
             <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
               <input type="checkbox" id="shovels">
               <label for="shovels">Shovels</label>
@@ -178,38 +178,48 @@
           </div>
           </fieldset>
           </div>
-          <fieldset class="max-length gutter">
-            <legend class="giga gutter">Do you have a valid driver's license?</legend>
-            <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
+          <fieldset class="max-length">
+            <legend class="giga gutter push-1-2">Do you have a valid driver's license?</legend>
+            <div class="radio push gutter">
               <input type="radio" id="valid-drivers-license-yes" name="valid drivers license?">
               <label for="valid-drivers-license-yes">Yes</label>
             </div>
-            <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
+            <div class="radio push gutter">
               <input type="radio" id="valid-drivers-license" name="valid drivers license?">
               <label for="valid-drivers-license">No</label>
             </div>
-            <legend class="giga gutter">Do you have a a pick-up truck you'd be willing to use?</legend>
-            <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
+            <legend class="giga gutter push-1-2">Do you have a pick-up truck you'd be willing to use?</legend>
+            <div class="radio push gutter">
               <input type="radio" id="truck" name="have a pickup truck?">
               <label for="truck">Yes</label>
             </div>
-            <div class="unit unit-xs-1 s-1 m-1 l-1-2 push gutter">
+            <div class="radio push gutter">
               <input type="radio" id="truck-no" name="have a pickup truck?">
               <label for="truck-no">No</label>
             </div>
+            <legend class="giga gutter push-1-2">Do you have up-to-date first-aid certification?</legend>
+            <div class="radio push gutter">
+              <input type="radio" id="first-aid" name="current first aid certification?">
+              <label for="first-aid">Yes</label>
+            </div>
+            <div class=" radio push gutter">
+              <input type="radio" id="first-aid-no" name="current first aid certification?">
+              <label for="first-aid-no">No</label>
+            </div>
           </fieldset>
-          <fieldset class="max-length gutter">
+          <fieldset class="max-length">
             <div class="push gutter pad-t-1-2">
-              <label for="details">Please let us know any comments or questions you may have. <span class="italic">(optional)</span></label>
+              <label class="push-1-2"for="details"><b>Please let us know any comments or questions you may have. <span class="italic">(optional)</span></b></label>
               <textarea id="details" name="message" required></textarea>
             </div>
           </fieldset>
           <div class="text-center">
-            <button class="btn btn-light" type="submit">Apply</button>
+            <button class="btn btn-light giga push" type="submit">Apply</button>
           </div>
-          <input type="hidden" name="_subject" value="Request to join the mission">
+          <input type="hidden" name="_subject" value="">
         </form>
-      </div>
+        <div class="deck max-length gutter island mega">
+          <p>© Tree Hugger International Organization<p>
     </section>
   </div>
 </body>
