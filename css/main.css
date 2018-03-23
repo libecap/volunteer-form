@@ -1,5 +1,5 @@
 html {
-  font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 body {
@@ -27,10 +27,16 @@ textarea {
 }
 
 fieldset {
+  /* border-bottom: solid;
+  border-color: #70ad55;
+  border-width: thin; */
+  border: none;
+}
+
+.line {
   border-bottom: solid;
   border-color: #70ad55;
-  border-width: thin;
-  border-top: none;
+  border-width: .5px;
 }
 
 .contact {
@@ -49,10 +55,6 @@ fieldset {
   color: #fff;
 }
 
-.wrapper {
-  background-color: #fff;
-}
-
 .btn {
   color: #fff;
 }
@@ -64,4 +66,8 @@ fieldset {
 
 .radio {
   display: inline-block;
+}
+
+#details {
+  height: 150px;
 }
